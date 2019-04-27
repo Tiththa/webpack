@@ -33,50 +33,56 @@ With this bundle configuration, you would load your third party libraries, then 
 
 # webpack.config.js
 
-``` javascript
-{{webpack.config.js}}
+```javascript
+_{{webpack.config.js}}_
 ```
 
-# js/vendor.js
+# dist/vendor.js
 
-``` javascript
-{{js/vendor.js}}
+```javascript
+_{{dist/vendor.js}}_
 ```
 
-# js/common.js
+# dist/commons~pageA~pageB~pageC.js
 
-``` javascript
-{{js/common.js}}
+```javascript
+_{{dist/commons~pageA~pageB~pageC.js}}_
 ```
 
-# js/pageA.js
+# dist/commons~pageB~pageC.js
 
-``` javascript
-{{js/pageA.js}}
+```javascript
+_{{dist/commons~pageB~pageC.js}}_
 ```
 
-# js/pageB.js
+# dist/pageA.js
 
-``` javascript
-{{js/pageB.js}}
+```javascript
+_{{dist/pageA.js}}_
 ```
 
-# js/pageC.js
+# dist/pageB.js
 
-``` javascript
-{{js/pageC.js}}
+```javascript
+_{{dist/pageB.js}}_
+```
+
+# dist/pageC.js
+
+```javascript
+_{{dist/pageC.js}}_
 ```
 
 # Info
 
-## Uncompressed
+## Unoptimized
 
 ```
-{{stdout}}
+_{{stdout}}_
 ```
 
-## Minimized (uglify-js, no zip)
+## Production mode
 
 ```
-{{min:stdout}}
+_{{production:stdout}}_
 ```

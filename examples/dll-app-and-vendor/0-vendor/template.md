@@ -1,46 +1,45 @@
 This is the vendor build part.
 
-It's built separatly from the app part. The vendors dll is only built when vendors has changed and not while the normal development cycle.
+It's built separately from the app part. The vendors dll is only built when the array of vendors has changed and not during the normal development cycle.
 
-The DllPlugin in combination with the `output.library` option exposes the internal require function as global variable in the target enviroment.
+The DllPlugin in combination with the `output.library` option exposes the internal require function as global variable in the target environment.
 
-A manifest is creates which includes mappings from module names to internal ids.
+A manifest is created which includes mappings from module names to internal ids.
 
 ### webpack.config.js
 
-``` javascript
-{{webpack.config.js}}
+```javascript
+_{{webpack.config.js}}_
 ```
 
 # example-vendor
 
-``` javascript
-{{../node_modules/example-vendor.js}}
+```javascript
+_{{../node_modules/example-vendor.js}}_
 ```
 
-# js/vendor.js
+# dist/vendor.js
 
-``` javascript
-{{js/vendor.js}}
+```javascript
+_{{dist/vendor.js}}_
 ```
 
-# js/vendor-manifest.json
+# dist/vendor-manifest.json
 
-``` javascript
-{{js/vendor-manifest.json}}
+```javascript
+_{{dist/vendor-manifest.json}}_
 ```
 
 # Info
 
-## Uncompressed
+## Unoptimized
 
 ```
-{{stdout}}
+_{{stdout}}_
 ```
 
-## Minimized (uglify-js, no zip)
+## Production mode
 
 ```
-{{min:stdout}}
+_{{production:stdout}}_
 ```
-

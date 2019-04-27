@@ -2,38 +2,38 @@
 
 This example illustrates how to specify chunk name in `require.ensure()` and `import()` to separated modules into separate chunks manually.
 
-``` javascript
-{{example.js}}
+```javascript
+_{{example.js}}_
 ```
 
 # templates/
 
-* foo.js
-* baz.js
-* bar.js
+- foo.js
+- baz.js
+- bar.js
 
 All templates are of this pattern:
 
-``` javascript
-{{templates/foo.js}}
+```javascript
+_{{templates/foo.js}}_
 ```
 
-# js/output.js
+# dist/output.js
 
-``` javascript
-{{js/output.js}}
+```javascript
+_{{dist/output.js}}_
 ```
 
 # Info
 
-## Uncompressed
+## Unoptimized
 
 ```
-{{stdout}}
+_{{stdout}}_
 ```
 
-## Minimized (uglify-js, no zip)
+## Production mode
 
 ```
-{{min:stdout}}
+_{{production:stdout}}_
 ```
